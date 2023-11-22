@@ -94,6 +94,7 @@ gh repo clone toptobes/realworld-scotty-hs && cd realworld-scotty-hs
 From there, update the appropriate configs in `conduit.json`
  - It's already set with sensible defaults; be sure to double-check the postgres connection string
  - there is a `conduit-schema.json` for your convenience as well that provides extra info
+ - If necessary, you can set the `CONDUIT_CONFIG` env var to to some custom config path
 
 Then, you can start the app via `cabal run app`, or run the unit tests w/ `cabal run spec`.
 
@@ -106,9 +107,6 @@ If you plan to make any modifications involving creating new files or adding new
 ## Further documentation
 
 You can create the documentation site for this project using `cabal haddock`, and then access it w/ `npx serve` or whatever
-else you fancy. Nearly everything except for the Features are decently documented, and I'll work on adding more soon.
+else you fancy. Nearly everything except for the features are decently documented, and I'll work on adding more soon.
 
-Or just read through the code manually if you prefe, whatever you want lol.
-
-ᵃˡˢᵒ ᴵ ʲᵘˢᵗ ʷᵃⁿᵗᵉᵈ ᵗᵒ ᵇʳᵃᵍ ᵗʰᵃᵗ ⁿˣ ʷᵃˢ ᶜʰᵉᶜᵏᶦⁿᵍ ᶜʸᵖʳᵉˢˢ'ˢ ᵗᵉˢᵗ ʳᵉˢᵘˡᵗˢ ᶠʳᵒᵐ ᶦᵗ'ˢ ᶜᵃᶜʰᵉ ʷʰᶦˡᵉ ᴵ ʷᵃⁿᵗᵉᵈ ᶦᵗ ᵗᵒ ᶠᵘˡˡʸ ʳᵉ⁻ᵗᵉˢᵗ ᵃⁿᵈ ᴵ ʲᵘˢᵗ ʳᵃⁿᵈᵒᵐˡʸ 
-ᵍᵘᵉˢˢᵉᵈ ᵗʰᵃᵗ ᴵ ˢʰᵒᵘˡᵈ ᵘˢᵉ '⁻⁻ⁿᵒ⁻ᶜᵃᶜʰᵉ' ᵇ/ᶜ ʷʰʸ ⁿᵒᵗ ᵃⁿᵈ ᶦᵗ ᵃᶜᵗᵘᵃˡˡʸ ᵗᵘʳⁿᵉᵈ ᵒᵘᵗ ᵗᵒ ᵇᵉ ᵗʰᵉ ʳᶦᵍʰᵗ ᵒᵖᵗᶦᵒⁿ ᵗᵒ ᵈᵒ ˢᵒ ᶠᶦʳˢᵗ ᵗʳʸ ˡᵒˡ
+Or just read through the code manually if you prefer, whatever you want lol.
